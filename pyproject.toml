@@ -1,0 +1,25 @@
+[project]
+name = "charged-kuiper"
+version = "0.1.0"
+description = "On-premise AI Agent for Raw Material Management with CSV Data Integration"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlmodel",
+    "sqlalchemy",
+    "pydantic",
+    "python-multipart",
+    "pytest",
+    "streamlit",
+    "plotly",
+    "pandas",
+    "requests",
+    "langgraph",
+    "langchain",
+    "langchain-core",
+    "langchain-community",
+    "langchain-ollama",
+    "openpyxl",
+]

@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlmodel
+sqlalchemy
+pydantic
+python-multipart
+pytest
+streamlit
+plotly
+pandas
+requests
+langgraph
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+openpyxl
