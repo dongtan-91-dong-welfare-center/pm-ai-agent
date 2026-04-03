@@ -1,14 +1,14 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import StreamingResponse, Response
 from sqlmodel import Session, select
-from app.core.db import get_session
-from app.models.inventory import RawMaterial, AuditLog
-from app.services.agent_service import AgentService
-from app.services.report_generator import generate_excel_report
+from backend.app.core.db import get_db
+from backend.app.models.inventory import RawMaterial, AuditLog
+from backend.app.services.agent_service import AgentService
+from backend.app.services.report_generator import generate_excel_report
 from typing import List
 import pandas as pd
 
-from app.core.data_loader import get_data_loader
+from backend.app.core.data_loader import get_data_loader
 
 router = APIRouter()
 

@@ -1,13 +1,23 @@
-from sqlmodel import Session, create_engine, SQLModel
-from sqlalchemy.orm import sessionmaker
+# backend/app/core/db.py
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "sqlite:///./raw_material_agent.db"
+# Podman으로 띄운 PostgreSQL 접속 정보
+DATABASE_URL = "postgresql://admin:admin@localhost:5432/pm_agent"
 
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+# 엔진 생성
+engine = create_engine(DATABASE_URL, echo=True) # echo=True로 두면 SQL 로그가 터미널에 출력됩니다.
 
-def get_session():
-    with Session(engine) as session:
-        yield session
+# 세션 팩토리
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-def init_db():
-    SQLModel.metadata.create_all(engine)
+# ORM 베이스 클래스
+Base = declarative_base()
+
+# FastAPI 의존성 주입용 함수
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

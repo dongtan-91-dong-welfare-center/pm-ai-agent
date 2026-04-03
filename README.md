@@ -47,11 +47,11 @@
 ### 1. 환경 설정
 ```bash
 # 가상 환경 생성 및 진입
-python -m venv .venv
+uv venv
 source .venv/bin/activate
 
 # 의존성 설치
-pip install -r backend/requirements.txt
+uv sync
 ```
 
 ### 2. 로컬 LLM 실행 (Ollama)

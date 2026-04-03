@@ -1,8 +1,8 @@
 from typing import List, Dict
 from datetime import datetime, timedelta
 import pandas as pd
-from app.core.data_loader import get_data_loader
-from app.services.llm_agent import MatAgent
+from backend.app.core.data_loader import get_data_loader
+from backend.app.services.llm_agent import MatAgent
 from sqlmodel import Session
 
 

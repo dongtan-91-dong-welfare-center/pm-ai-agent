@@ -22,4 +22,10 @@ dependencies = [
     "langchain-community",
     "langchain-ollama",
     "openpyxl",
+    "pgvector>=0.4.2",
+    "psycopg2-binary>=2.9.11",
+    "python-dotenv>=1.2.2",
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.13.1",
+    "langsmith>=0.7.22",
 ]
