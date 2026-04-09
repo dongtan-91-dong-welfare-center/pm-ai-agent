@@ -1,8 +1,8 @@
 # backend/migrate_csv.py
 import pandas as pd
 from sqlalchemy.orm import Session
-from app.core.db import SessionLocal
-from app.models.domain import Material, WarehouseStock, Vendor, VendorItem, PurchaseOrder, POStatus
+from backend.app.core.db import SessionLocal
+from backend.app.models.domain import Material, WarehouseStock, Vendor, VendorItem, PurchaseOrder, POStatus
 
 
 def run_migration():

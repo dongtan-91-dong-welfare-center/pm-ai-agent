@@ -1,0 +1,46 @@
+# --- Python 관련 ---
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+share/python-wheels/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- uv 및 가상 환경 관련 ---
+.venv/
+.target/
+
+# --- 환경 변수 및 비밀번호 (보안 필수!) ---
+.env
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDE 관련 (선택 사항) ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS 관련 ---
+.DS_Store
+Thumbs.db
