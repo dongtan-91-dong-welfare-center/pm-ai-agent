@@ -1,5 +1,0 @@
-po_id,po_item_no,receipt_date,movement_type,product_id,order_qty,info_rec_date,old_price,new_price,master_price,master_price_currency,order_price,order_currency,price_unit,received_quantity,received_value_local_currency,printing_plate_cost,copper_plate_cost,total_received_value_local_currency,total_received_value_krw,vendor_id
-4500274301,10,2026-03-29,101,1000001,1500,2026-03-17,40 KRW,45 KRW,45,KRW,45,KRW,1,1500,67500,0,0,67500,67500,10004480
-4500274301,20,2026-03-29,101,1000003,80,2026-03-17,11500 KRW,12000 KRW,12000,KRW,12000,KRW,1,80,960000,0,0,960000,960000,10004480
-4500274302,10,2026-03-15,101,2000001,250,2026-03-01,2150000 KRW,2181818 KRW,2181818,KRW,2181818,KRW,10000,250,54545,50000,0,104545,104545,20001120
-4500274303,10,2026-03-22,101,4000001,5000,2026-02-15,11500 KRW,12000 KRW,12000,KRW,12000,KRW,1000,5000,60000,150000,50000,260000,260000,30005540
